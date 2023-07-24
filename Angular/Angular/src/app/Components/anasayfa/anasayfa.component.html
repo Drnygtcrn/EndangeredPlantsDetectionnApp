@@ -1,0 +1,51 @@
+<div class="container-lg mt-5">
+  <div class="row g-0 text-center">
+    <div class="col-sm-6 col-md-6">
+      <p id="h1" class=" text-1 lh-1">Nesli Tükenmekte Olan Bitkileri Bulmamıza Yardımcı Olun!</p>
+      <p id="h2" class=" text-2 mt-5 lh-1">Aşağıdaki Kutucuğa Çektiğiniz Fotoğrafı Yükleyiniz.</p>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card card-1" style="width: 18rem;">
+        
+        <img id="main-1" src="assets/1.png" class="card-img" alt="">
+        
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card card-2" style="width: 18rem;">
+        
+          <img id="main-2" src="assets/2.png" class="card-img" alt="">
+        
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card card-3 mx-auto">
+      <div class="card-body">
+        
+        
+        
+        <div class="text center mt-4">
+          <label for="images" class="drop-container">
+            <span class="drop-title mb-4">Fotoğrafı Sürükleyiniz veya aşağıdaki kısımdan yükleyiniz.</span>
+            
+            <input type="file" id="images" (change)="onFileSelected($event)" />
+          </label>
+          
+          <button type="button" class="btn btn-outline-primary yükle btn-lg" (click)="onUpload()">Test Et!</button>
+          <div *ngIf="tahmin">
+            <div class="row">
+              <div class="col-md-6">
+                <p id="xd">Prediction: {{ tahmin }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+

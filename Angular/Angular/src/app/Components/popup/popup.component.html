@@ -1,0 +1,14 @@
+
+
+<div class="popup-container">
+  <div class="plant-card">
+    <div class="image-container">
+      <img [src]="'data:image/jpeg;base64,' + Fotograf" alt="bitki">
+    </div>
+    <div class="plant-details">
+      <h1 class="plant-name">Yüklediğiniz bitki <b>{{tahmin}} ({{Isim}})</b></h1>
+      <p class="plant-description">{{Aciklama}}</p>
+      <button class="back-button" (click)="closePopup()">Geri Dön</button>
+    </div>
+  </div>
+</div>

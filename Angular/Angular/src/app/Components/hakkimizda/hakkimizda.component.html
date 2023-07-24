@@ -1,0 +1,47 @@
+<div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="fotografkonteyner">
+                <img class="foto" src="./assets/sakura.jpg">
+            </div>            
+        </div>
+        <div class="col-md-7">
+            <div class="hakkimizda">
+                <div class="metinKutusu">
+                    <div><h1>Hakkımızda </h1> </div>
+                    <div class="aciklama"><p>{{paragraf}}</p></div>    
+                    <div class="metin"><p> Türkiye'de 10 binden fazla bitki türü yaşadığını biliyor muydunuz? Elbette bu alanlarda çalışmalar yapan yetkili kişiler haricinde isimleri bilebilmek pek de mümkün gözükmüyor. İşte bu proje sayesinde karşılaştığınız bir bitkinin tükenme tehlikesi altında olup olmadığını belirlemek için size yardımcı olmaktayız. Bu doğrultuda çıktığımız yolda TÜBİTAK tarafından 2209-A kapsamında destek görerek onure edildik.</p></div>                
+                </div>
+            </div>
+            <div class="iletisim">
+                <h1>İLETİŞİM</h1>
+                <form class="Form" (ngSubmit)="sendEmail()" >
+                    <div class="row">
+                        <div class="col-1-2">
+                            <label for="name">Ad Soyad*</label>
+                            <input type="text" id="name" name="name" [(ngModel)]="name" required>
+                        </div>
+                        <div class="col-1-2">
+                            <label for="email">E-Posta*</label>
+                            <input type="email" id="email" name="email" [(ngModel)]="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1-1">
+                            <label for="message">Mesaj*</label>
+                            <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1-2">
+                            <p>* Doldurulması zorunlu alanlar</p>
+                        </div>
+                        <div class="col-1-2">
+                            <input id="btn-contact-send" class="gonder" value="GÖNDER" type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

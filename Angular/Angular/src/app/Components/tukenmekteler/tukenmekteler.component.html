@@ -1,0 +1,33 @@
+<div>
+    <div class="row"> 
+        <div class="col-md-2" id="asd">
+            
+        </div>
+        <div class="col-md-9" id="aa">
+            <!--<input type="text"  [(ngModel)]="filtre" id="search" placeholder="İsmiyle Arayın">-->
+            <table class="xd" *ngFor="let bitki of nesliListesi | paginate: { itemsPerPage: sayfadakiSayi, currentPage: p }">
+                <article class="article-card">
+                    <div class="image-box">
+                        <img   [src]="'data:image/jpeg;base64,' + bitki.Fotograf" class="article-banner">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title"> {{bitki.Isim}} ({{bitki.Latin}})</h3>
+                        <p>{{bitki.Aciklama}} </p>
+                        <div class="article-content-footer">
+                            <div class="author"> 
+                                <div class="author-info">
+                                    <div class="publish-date">{{bitki.Tarih}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+            </table>
+            <div class="d-flex justify-content-center">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina&display=swap');
+ul li img{
+    width: 5% ;
+    height: 5%;
+    margin: 15px;
+}
+ul{
+    list-style-type:none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-right: 20%;
+}
+#nav{
+    background-color: rebeccapurple;
+}
+li{
+    display:inline;
+    margin:10px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+@media screen and (min-width: 360px) and (max-width:415px) {
+    a{
+        text-decoration:overline;
+        color: red;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:912px) {
+    a{
+        text-decoration:overline;
+        color: blue;
+    }
+}
+
+#nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background: #fff;
+    z-index: 300;
+    font-size: 1.3em;
+    font-family: 'Faustina', serif;
+    color: #606060;
+    border-bottom: 1px solid #dfdfdf;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}

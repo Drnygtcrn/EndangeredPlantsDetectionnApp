@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200&display=swap');
+
+.ac-head{
+    background: #e8ecef;
+    padding: 20px;
+    cursor: pointer;
+    /* border-top-left-radius: 6px;
+    border-top-right-radius: 6px;*/
+    border-radius: 6px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.ac-head.active{
+    border-radius: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 0;
+}
+.ac-content{
+    padding: 20px;
+    border: 1px solid #e8ecef;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    
+
+
+}
+
+.uc-accordion{
+    margin: 3.2% 20% 5% 20%;
+}
+
+p{
+    font-size: 18px;
+    font-family: sans-serif;
+}

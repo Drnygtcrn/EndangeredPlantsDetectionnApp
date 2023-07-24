@@ -1,0 +1,9 @@
+<div class="uc-accordion">
+  <div *ngFor = "let aco of sorular; let i = index;">
+    <p class="ac-head"   [ngClass]="{'active':view_ac=='ac_'+i}"    (click)="changeAccordion('ac_'+i)" > {{aco.Soru}}</p>
+    <div class="ac-content"  *ngIf="view_ac == 'ac_'+i ">
+      {{aco.Cevap}}
+    </div>
+  </div>
+</div>
+<i class="bi bi-file-plus-fill"></i>
